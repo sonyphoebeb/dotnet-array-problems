@@ -15,11 +15,17 @@ namespace DotnetArrayProblems
                 new Employee { FirstName = "Narendra", LastName = "S", Dob = "12-08-1995", Salary = 70000 },
             };
 
+            
             PrintEmployeeDetails objPrintEmployeeDetails = new PrintEmployeeDetails();
             objPrintEmployeeDetails.DisplayEmployees(listEmployees);
 
+            Console.WriteLine();
             GetHighestSalary objGetHighestSalary = new GetHighestSalary();
             objGetHighestSalary.PrintHighestSalary(listEmployees);
+
+            Console.WriteLine();
+            GetSecondHighestSalary objGetSecondHighestSalary = new GetSecondHighestSalary();
+            objGetSecondHighestSalary.PrintSecondHighestSalary(listEmployees);
 
         }
     }
