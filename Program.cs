@@ -32,21 +32,8 @@ namespace DotnetArrayProblems
             }
             */
 
-            Employee highestSalaryEmployee = listEmployees[0];
-
-            foreach (Employee emp in listEmployees)
-            {
-                if (emp.Salary > highestSalaryEmployee.Salary)
-                {
-                    highestSalaryEmployee = emp;
-                }
-            }
-
-            Console.WriteLine("Employee with Highest Salary:");
-            Console.WriteLine("FirstName: " + highestSalaryEmployee.FirstName);
-            Console.WriteLine("LastName: " + highestSalaryEmployee.LastName);
-            Console.WriteLine("DOB: " + highestSalaryEmployee.Dob);
-            Console.WriteLine("Salary: " + highestSalaryEmployee.Salary);
+            GetHighestSalary objGetHighestSalary = new GetHighestSalary();
+            objGetHighestSalary.PrintHighestSalary(listEmployees);
 
         }
     }
