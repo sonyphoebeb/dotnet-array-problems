@@ -15,22 +15,8 @@ namespace DotnetArrayProblems
                 new Employee { FirstName = "Narendra", LastName = "S", Dob = "12-08-1995", Salary = 70000 },
             };
 
-            /*
-            int count = 1;
-
-            foreach (Employee emp in listEmployees)
-            {
-           
-                Console.WriteLine(count);
-                Console.WriteLine("First Name: " + emp.FirstName);
-                Console.WriteLine("Last Name: " + emp.LastName);
-                Console.WriteLine("Date of Birth: " + emp.Dob);
-                Console.WriteLine("Salary: " + emp.Salary);
-                Console.WriteLine();
-
-                count++;
-            }
-            */
+            PrintEmployeeDetails objPrintEmployeeDetails = new PrintEmployeeDetails();
+            objPrintEmployeeDetails.DisplayEmployees(listEmployees);
 
             GetHighestSalary objGetHighestSalary = new GetHighestSalary();
             objGetHighestSalary.PrintHighestSalary(listEmployees);
