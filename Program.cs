@@ -15,6 +15,7 @@ namespace DotnetArrayProblems
                 new Employee { FirstName = "Narendra", LastName = "S", Dob = "12-08-1995", Salary = 70000 },
             };
 
+            /*
             int count = 1;
 
             foreach (Employee emp in listEmployees)
@@ -29,6 +30,7 @@ namespace DotnetArrayProblems
 
                 count++;
             }
+            */
 
             Employee highestSalaryEmployee = listEmployees[0];
 
@@ -45,6 +47,7 @@ namespace DotnetArrayProblems
             Console.WriteLine("LastName: " + highestSalaryEmployee.LastName);
             Console.WriteLine("DOB: " + highestSalaryEmployee.Dob);
             Console.WriteLine("Salary: " + highestSalaryEmployee.Salary);
+
         }
     }
 
