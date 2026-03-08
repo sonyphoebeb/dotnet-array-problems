@@ -27,6 +27,10 @@ namespace DotnetArrayProblems
             GetSecondHighestSalary objGetSecondHighestSalary = new GetSecondHighestSalary();
             objGetSecondHighestSalary.PrintSecondHighestSalary(listEmployees);
 
+            Console.WriteLine();
+            GetLowestSalary objGetLowestSalary = new GetLowestSalary();
+            objGetLowestSalary.DisplayLowestSlary(listEmployees);
+
         }
     }
 
